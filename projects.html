@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Projects</title>
+
+ <link rel="stylesheet" href="styles/style.css" />
+ <link href='http://fonts.googleapis.com/css?family=Tauri|Exo' rel='stylesheet' type='text/css'>
+ <link href="styles/print.css" rel="stylesheet" type="text/css" media="print">
+<script src="js/jquery-1.4.2.js" type="text/javascript"></script>
+</head>
+
+<header>
+<ul id="navigation">
+ <li><a href="index.html">Home</a></li>
+  <li><a href="projects.html">Projects</a></li>
+  <li><a href="resume.html">Resume</a></li>
+  <li><a href="contact.html">Contact</a></li>
+</ul>
+<script type="text/javascript">
+$(function() {
+      var d=300;
+      $('#navigation a').each(function(){
+      $(this).stop().animate({
+      'marginTop':'-80px'
+      },d+=150);
+      });
+      $('#navigation > li').hover(
+      function () {
+      $('a',$(this)).stop().animate({
+      'marginTop':'-2px'
+      },200);
+      },
+      function () {
+      $('a',$(this)).stop().animate({
+      'marginTop':'-80px'
+      },200);
+      }
+      );
+      });
+</script>
+<div class="container">
+  <div class="navmenu">
+  
+  <p><h1><strong>Joe Fiene</strong></h1><hr/></p>
+
+  
+     
+  <p> <button class = "hide"><em>Hide Card</em></button> </p>
+ <script>
+$( "button.hide" ).click(function() {
+  $( "section.card" ).hide( "slow" );
+});
+</script>
+<p><button class ="email"><a href="mailto:joefiene@mypfbank.com" target ="_top"> <em><abbr title= "joefiene@mypfbank.com">Email Me</abbr></em> </a></button></p>
+     <p>(305)&nbsp;965-4088</p></div>
+  </header>
+  <body>
+  <div class="content">
+
+    
+    <section class="holder"> <h3><ins>Preferred Bank</ins></h3>
+    <p>We have serviced clients since 1904.  Our success and growth over the years has come thanks to our unwavering commitment to the communities we serve, to our clients, and to our shareholders and staff.    </p>
+    <p>We take great pride in the fact that we are an independent community bank.  We strive to be “Big enough to help and yet small enough to care!”</p> 
+    <p><a href="http://www.mypfbank.com">Website Link&nbsp;&raquo; </a></p>
+    </section>
+     <section class="holder"> <h3><ins>Be Great Today 5k</ins></h3>
+    <p>The Be Great Today 5K Race was established in 2011.</p>
+    <p>It is a part of an endowment fund created by DePauw University students for the support of suicide prevention.</p>
+        <p><a href="http://www.begreattoday5k.org">Website Link&nbsp;&raquo; </a></p>
+</section>
+      <section class="holder"> <h3><ins>WhistleBlower Law Firm</ins></h3>
+    <p>At the Whisleblower Law Firm we are committed to helping people who have suffered from fraud. While we practice with a strong emphasis on Qui Tam matters (False Claims Act) our legal services are not limited in any way. Our goal is to provide a multitude of legal services personally suited to our clients needs while working for the public good.</p>
+        <p><a href="http://www.813whistle.com">Website Link&nbsp;&raquo; </a></p>
+</section>
+      <section class="holder"> <h3><ins>EON-H Water Company</ins></h3>
+    <p>EON-H is a water company based in California that I consult as well as am helping them expand from a simple template based website to a fully capable site to take on orders online.</p>
+        <p><a href="http://www.dontjustdrinkwaterabsorbit.com">Website Link&nbsp;&raquo; </a></p>
+</section>
+    <section class="holder"> <h3><ins>Angels Left Behind</ins></h3>
+    <p>Angels Left Behind is an organization also from my home state that is a Non-Profit Organization dedicated to rescuing animals from cruel owners. They are extremely in need of funds so if you love little animals and want to help out I included the donation link below.</p>
+        <p><a href="http://www.angelsleftbehind.org">Website Link&nbsp;&raquo; </a></p>
+
+    <form method="post" action="https://www.paypal.com/cgi-bin/webscr" target="_blank">
+<input type="hidden" name="cmd" value="_donations"><input type="hidden" name="business" value="angelsleftbehind@yahoo.com"><input type="hidden" name="item_name" value=" "><input type="hidden" name="currency_code" value="USD"><input type="hidden" name="return" value=""><input type="hidden" name="tax" value="0"><input type="hidden" name="lc" value="US"><input type="hidden" name="no_shipping" value="0"><input type="hidden" name="no_note" value="1"><input type="hidden" name="bn" value="NetworkSolutions_LeapCafe_PPD">
+
+<input type="image" src="https://www.paypal.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"><img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1"></td>
+
+</form>
+   
+    </section>
+    
+    <section class="holder"> <h3><ins>Some Code</ins></h3>
+    <p>Here is a section for some example coded projects. More to come soon! </p>
+        <p><a href="IRSMain.c">Download Link&nbsp;&raquo;</a></p>
+        </section>
+    
+    
+    
+   
+    <section class ="card">
+     <img src="img/card.png" alt="Business Card"/> </section>
+</div>
+</body>
+<footer>
+
+  <div class="footer">
+    <h5>Current Mailing Address: </h5>
+  	<blockquote><address>Red Road Commons<br/>6630 SW 57th Ave<br/>
+  		Unit # B 215
+  		<br/>South Miami, FL 33143</address></blockquote>
+</div>
+</div>
+</footer>
+</html>

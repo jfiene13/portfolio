@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Contact</title>
+
+ <link rel="stylesheet" href="styles/style.css" />
+ <link href='http://fonts.googleapis.com/css?family=Tauri|Exo' rel='stylesheet' type='text/css'>
+ <link href="styles/print.css" rel="stylesheet" type="text/css" media="print">
+<script src="js/jquery-1.4.2.js" type="text/javascript"></script>
+
+</head>
+
+<header>
+<ul id="navigation">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="projects.html">Projects</a></li>
+  <li><a href="resume.html">Resume</a></li>
+  <li><a href="contact.html">Contact</a></li>
+</ul>
+<script type="text/javascript">
+$(function() {
+      var d=300;
+      $('#navigation a').each(function(){
+      $(this).stop().animate({
+      'marginTop':'-80px'
+      },d+=150);
+      });
+      $('#navigation > li').hover(
+      function () {
+      $('a',$(this)).stop().animate({
+      'marginTop':'-2px'
+      },200);
+      },
+      function () {
+      $('a',$(this)).stop().animate({
+      'marginTop':'-80px'
+      },200);
+      }
+      );
+      });
+</script>
+<div class="container">
+  <div class="navmenu">
+  
+  <p><h1><strong>Joe Fiene</strong></h1><hr/></p>
+
+  
+     
+  <p> <button class = "hide"><em>Hide Card</em></button> </p>
+ <script>
+$( "button.hide" ).click(function() {
+  $( "section.card" ).hide( "slow" );
+});
+</script>
+<p><button class ="email"><a href="mailto:joefiene@mypfbank.com" target ="_top"> <em><abbr title= "joefiene@mypfbank.com">Email Me</abbr></em> </a></button></p>
+     <p>(305)&nbsp;965-4088</p></div>
+  
+  </header>
+  <body>
+  <div class="content">
+    
+    <section class="holder"> <h3><ins>Contact Me</ins></h3>
+    <p>Feel free to contact me either by email or phone at any time to discuss your business needs or with any questions or comments. If the form below is not working please see the contact information to the left.</p></section>
+     <section class="holder"> 
+    <p><table id="dz-tablewb_element_gadget_GADGET_FORM__CONTACT_US__1398810566505_56" class="dz-table" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td align="center">
+<div id="wb_element_gadget_GADGET_FORM__CONTACT_US__1398810566505_56" class="ic-element"><div id="NETSOL_IC_NSOA_hqe1y2bqddeoCONTACT_US1398810590741"><script type="text/javascript" src="http://www.appgadgets.com/dispatcher.html?appId=hqe1y2bqddeo&view=CONTACT_US&bgColor=%23FFFFFF&fontColor=%23000000&width=570&divId=NETSOL_IC_NSOA_hqe1y2bqddeoCONTACT_US1398810590741&targetedView=VISITOR"></script></div></div>
+</td>
+</tr>
+</table></p>
+    </section>
+      
+    
+     <section class ="card">
+     <img src="img/card.png" alt="Business Card"/> </section>
+</div>
+</body>
+
+<footer>
+  <div class="footer">
+    <h5>Current Mailing Address: </h5>
+  	<blockquote><address>Red Road Commons<br/>6630 SW 57th Ave<br/>
+  		Unit # B 215
+  		<br/>South Miami, FL 33143</address></blockquote>
+</div>
+</div>
+</footer>
+</html>

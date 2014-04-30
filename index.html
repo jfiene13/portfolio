@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Solo Solutions Home</title>
+
+ <link rel="stylesheet" href="styles/style.css" />
+ <link href='http://fonts.googleapis.com/css?family=Tauri|Exo' rel='stylesheet' type='text/css'>
+ <link href="styles/print.css" rel="stylesheet" type="text/css" media="print">
+<script src="js/jquery-1.4.1.min.js"></script>
+<script src="js/jquery.waterwheelCarousel.js"></script>
+<script src="js/jquery.waterwheelCarousel.setup.js"></script>
+
+</head>
+<header>
+<ul id="navigation">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="projects.html">Projects</a></li>
+  <li><a href="resume.html">Resume</a></li>
+  <li><a href="contact.html">Contact</a></li>
+</ul>
+<script>
+$(function() {
+      var d=300;
+      $('#navigation a').each(function(){
+      $(this).stop().animate({
+      'marginTop':'-80px'
+      },d+=150);
+      });
+      $('#navigation > li').hover(
+      function () {
+      $('a',$(this)).stop().animate({
+      'marginTop':'-2px'
+      },200);
+      },
+      function () {
+      $('a',$(this)).stop().animate({
+      'marginTop':'-80px'
+      },200);
+      }
+      );
+      });
+</script>
+<div class="container">
+  <div class="navmenu">
+   <p><h1><strong>Joe Fiene</strong></h1><hr/></p>
+   <p> <button class = "hide"><em>Hide Card</em></button> </p>
+ <script>
+$( "button.hide" ).click(function() {
+  $( "section.card" ).hide( "slow" );
+});
+</script>
+<p><button class ="email"><a href="mailto:joefiene@mypfbank.com" target ="_top"> <em><abbr title= "joefiene@mypfbank.com">Email Me</abbr></em> </a></button></p>
+     <p>(305)&nbsp;965-4088</p>
+     
+  
+  </header>      
+   </div>
+  <body>
+  <div class="content">
+    
+    <section class="holder"> <h3><ins>Welcome</ins></h3>
+    <p>I am an IT Consultant, Certified Bank Technology Officer, and currently finishing my education in Computer Science at the University of Miami. Here you will find a general overview of my experience and some examples of my work. Please feel free to contact me via email or phone with any comments, questions, or concerns!</p>
+     <p><small><ins>Current Project</ins>: Developing software for George Washington University OB/GYN Program.</small></p>
+
+    </section>
+    <hr/>
+  
+ <div id="waterwheelCarousel">
+    <img src="img/wbl.png" alt="" />
+    <img src="img/bgt.png" alt="" />
+    <img src="img/eon.png" alt="" />
+    <img src="img/pfb.png" alt="" />
+    <img src="img/dgm.png" alt="" />
+    <img src="img/hlf.png" alt="" />
+    <img src="img/alb.png" alt="" />
+
+  </div> 
+  
+  <hr/>
+  
+  <section class="holder"> <h3><ins>My Work</ins></h3>
+    <p>Above is an interactive show of images pulled from homepages of websites I have worked to develop in the past as well as currently still work with. Navigate around simply by clicky on the image you want to focus on. To get more information on these sites check out the <a href="projects.html">projects</a></p>
+    
+   
+    <p><small><a href="projects.html">More Info &nbsp;&raquo;</a></small></p>  
+    </section>
+    
+    
+    
+   
+     <section class ="card">
+     <img src="img/card.png" alt="Business Card"/> </section>
+</div>
+</body>
+<footer>
+
+  <div class="footer">
+    <h5>Current Mailing Address: </h5>
+  	<blockquote><address>Red Road Commons<br/>6630 SW 57th Ave<br/>
+  		Unit # B 215
+  		<br/>South Miami, FL 33143</address></blockquote>
+</div>
+</div>
+</footer>
+</html>
